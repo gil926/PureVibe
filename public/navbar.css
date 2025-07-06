@@ -1,0 +1,84 @@
+body{      
+    opacity: 1;
+   background-color: white;
+    padding: 0px;
+    z-index: 2;
+    font-family: Varela Round;
+}
+.elements{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.logo{
+    margin-top: 25px;
+    text-align: center;
+}
+#NavBar{
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 25px;
+}
+.maiNav{
+    background-color: white;
+    margin: 0%;
+    box-shadow:  0px 5px 8px rgb(207, 207, 207);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.login{
+    margin-top: 25px;
+    padding: 0px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.signup{
+    margin-top: 25px;
+    padding: 0px;
+    padding-right: 3px;
+    text-align: start;
+    font-size: 20px;
+
+}
+@media (max-width: 768px) {
+    .elements {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#logo {
+    width: 140px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo {
+    margin-top: 12px;
+}
+p {
+    font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.signup:hover,
+.login:hover,
+#NavBar a:hover {
+    color: black; /* צבע טקסט בעת מעבר */
+    background-color: #b6cbe0; /* רקע בהיר בעת מעבר */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+}
+.signup, .login, #NavBar a {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

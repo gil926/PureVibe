@@ -122,7 +122,8 @@ app.post('/signup', async (req, res) => {
       res.render('signup', { message: 'The email already exist. Please log in.' });
     } else {
       await db.collection('Users').insertOne({ name, last_name, username, email, password, phone });
-      res.send('You have successfully registered!');
+  
+      res.render('homePage');
     }
   } catch (err) {
     console.error('❌ Error in registration:', err);

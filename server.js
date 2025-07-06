@@ -131,7 +131,7 @@ app.post('/signup', async (req, res) => {
 });
 
 // ---------- התחברות ----------
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
   res.render('login', { message: null });
 
 });

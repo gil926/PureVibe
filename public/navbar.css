@@ -40,9 +40,9 @@ body{
 .signup{
     margin-top: 25px;
     padding: 0px;
-    padding-right: 3px;
+    padding-right: 2px;
     text-align: start;
-    font-size: 20px;
+    font-size: 19px;
 
 }
 @media (max-width: 768px) {

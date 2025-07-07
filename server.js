@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // URI למונגו
-const uri = 'mongodb+srv://oshergld1:osher1201@cluster0.ztvjv6l.mongodb.net/';
+const uri = 'mongodb+srv://Eitan:123@cluster0.behbrw6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const mongoClient = new MongoClient(uri);
 let db;
 
@@ -122,8 +122,7 @@ app.post('/signup', async (req, res) => {
       res.render('signup', { message: 'The email already exist. Please log in.' });
     } else {
       await db.collection('Users').insertOne({ name, last_name, username, email, password, phone });
-  
-      res.render('homePage');
+      res.render('login',{ message: null });
     }
   } catch (err) {
     console.error('❌ Error in registration:', err);

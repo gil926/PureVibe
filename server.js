@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
-
+ 
 // URI למונגו
 const uri = 'mongodb+srv://Eitan:123@cluster0.behbrw6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const mongoClient = new MongoClient(uri);

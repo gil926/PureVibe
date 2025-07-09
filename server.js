@@ -188,6 +188,12 @@ app.post('/posts', upload.single('image'), async (req, res) => {
   }
 });
 
+
+
+app.get('/Policy' ,(req, res)=> {
+  res.render('Policy');
+});
+
 // ---------- הפעלת שרת ----------
 app.listen(3000, () => {
   console.log('🚀 Server running at http://localhost:3000');
